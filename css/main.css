@@ -1,5 +1,6 @@
 #wrap {
     background: url(../img/wrapbg2.jpg)no-repeat center center/cover;
+
 }
 
 html,
@@ -1880,7 +1881,8 @@ body {
     background-image: url(../img/footerbg2.png);
     right: 0;
     position: absolute;
-    top: 459%;
+    top: 4260px;
+
 }
 
 .footerimg .footleaf {
@@ -1888,5 +1890,5 @@ body {
     height: 300px;
     background: url(../img/footerleaf.png) no-repeat;
     position: absolute;
-    top: 580%;
+    top: 5400px;
 }
