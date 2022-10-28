@@ -1037,7 +1037,7 @@ body {
     height: 100%;
     padding-top: 100px;
     padding-bottom: 150px;
-    background: url(../img/con3bg2.png) no-repeat -2px -102px;
+    background: url(../img/con3bg.png) no-repeat -2px -102px;
 
 }
 
@@ -1059,13 +1059,18 @@ body {
 .con3fl {
     position: absolute;
     right: 100px;
-    top: -99px;
+    top: -80px;
     left: -110px;
-    width: 930px;
-    height: auto;
+    width: 1100px;
+    height: 30px;
     z-index: 3;
 }
 
+.con3fl img:nth-child(2) {
+    right: -31px;
+    top: 139px;
+    position: absolute;
+}
 
 .con3in .slider-for {
     width: 900px;
