@@ -1,5 +1,5 @@
 #wrap {
-    background: url(../img/wrapbg2.jpg)no-repeat center center/cover;
+    background: url(../img/wrapbg.jpg)no-repeat center center/cover;
 
 }
 
@@ -31,7 +31,7 @@ body {
     width: 350px;
     height: 300px;
     top: 220%;
-    background: url(../img/나뭇가지.png) no-repeat;
+    background: url(../img/bough.png) no-repeat;
     position: absolute;
 }
 
@@ -321,7 +321,7 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: url(../img/mainbg임시.png) no-repeat center -10px / cover;
+    background: url(../img/mainbgdemo.png) no-repeat center -10px / cover;
     background-blend-mode: lighten;
 
 }
@@ -368,7 +368,7 @@ body {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 150%;
+    height: 140%;
     display: block;
 }
 
@@ -388,10 +388,10 @@ body {
 
 .starcon1 {
     position: absolute;
-    top: 100%;
+    top: 93%;
     width: 100%;
     height: 50%;
-    background: linear-gradient(to bottom right, rgba(16, 14, 8, 0), rgba(18, 7, 46, 1)) no-repeat;
+    background: linear-gradient(to bottom right, rgba(15, 9, 45, 0.1), rgba(15, 8, 43, 1)) no-repeat;
 }
 
 
@@ -1845,7 +1845,7 @@ body {
     font-size: 18px;
     display: flex;
     line-height: 24px;
-    background: url(../img/일상로고footer.png) no-repeat -25px center;
+    background: url(../img/logofooter.png) no-repeat -25px center;
 }
 
 .footerin div p {
@@ -1878,7 +1878,7 @@ body {
 .footerimg .bg {
     width: 800px;
     height: 1500px;
-    background-image: url(../img/footerbg2.png);
+    background-image: url(../img/footerbg.png);
     right: 0;
     position: absolute;
     top: 4260px;
