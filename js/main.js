@@ -47,7 +47,17 @@ $(function () {
 
 
 
+    //////////////////////////////////
 
+    function scrollPage() {
+        let scr = $(window).scrollTop();
+        for (let i = 0; i < $('.bgani li').length; i++) {
+            if (scr >= winHeight * i && scr < winHeight * (i + 1)) {
+                $('.bgani>li').removeClass('on');
+                $('.bgani>li').eq(i).addClass('on');
+            }
+        }
+    }
 
 
 
@@ -308,58 +318,33 @@ $(function () {
 
 
 
-    // $.firefly({
-
-    //     total: 200,
-
-    //     ofTop: 500,
-
-    //     ofLeft: 0,
-
-    //     on: 'document.body',
-
-    //     twinkle: 10,
-
-    //     minPixel: 1,
-
-    //     maxPixel: 5,
-
-    //     color: '#55fec8',
-
-    //     namespace: 'jqueryFireFly',
-
-    //     zIndex: Math.ceil(Math.random() * 20) - 1,
-
-    //     borderRadius: '50%',
-
-    //     _paused: false
-
-    // });
 
 
 
 
 
 
+    $('click').twinkle({
 
+        effect: 'drops-css',
 
+        EffectOptions: {
 
+            color: 'rgba(255,0,0,0.5)',
 
+            radius: 300,
 
+            duration: 1000,
 
+            width: 2,
 
+            count: 3,
 
+            delay: 300
 
+        }
 
-
-
-
-
-
-
-
-
-
+    });
 
 
 

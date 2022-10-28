@@ -5,14 +5,36 @@
 
 html,
 body {
-    overflow: hidden;
+    position: relative;
 }
+
+.bgani {
+    position: absolute;
+}
+
+.bgani li {
+    width: 1920px;
+    height: 900px;
+    display: none;
+}
+
+.bgani li:nth-child(1) {
+    height: 1080px;
+}
+
+
+
+
+.bgani li.on {
+    display: none;
+}
+
 
 .bglo {
 
     width: 100%;
     height: 1500px;
-    top: 162%;
+    top: 1514px;
     position: absolute;
     background: url(../img/bglo.png) no-repeat left center/cover;
 }
@@ -20,7 +42,7 @@ body {
 .con1fo {
     width: 100%;
     height: 330px;
-    top: 174%;
+    top: 1660px;
     right: -25%;
     position: absolute;
     background: url(../img/con1fo.png);
@@ -30,7 +52,7 @@ body {
 .bough {
     width: 350px;
     height: 300px;
-    top: 220%;
+    top: 2070px;
     background: url(../img/bough.png) no-repeat;
     position: absolute;
 }
@@ -38,7 +60,7 @@ body {
 .leaf {
     width: 300px;
     height: 480px;
-    top: 265%;
+    top: 2480px;
     right: 0;
     margin-left: 1500px;
     background: url(../img/con2leaf.png) no-repeat left center/cover;
@@ -53,7 +75,7 @@ body {
 }
 
 .firefly:nth-child(1) {
-    top: 260%;
+    top: 2430px;
     width: 800px;
     height: 600px;
     right: -150px;
@@ -61,8 +83,19 @@ body {
 
 }
 
+.firefly:nth-child(10) {
+    top: 2650px;
+    width: 400px;
+    height: 600px;
+    right: 0px;
+    scale: 0.6;
+    transform: rotate(100deg);
+    animation-delay: 2.5s;
+
+}
+
 .firefly:nth-child(2) {
-    top: 300%;
+    top: 2760px;
     width: 500px;
     height: 500px;
     left: 250px;
@@ -71,51 +104,10 @@ body {
 
 }
 
-.firefly:nth-child(3) {
-    top: 470%;
-    right: 70px;
-    width: 500px;
-    height: 500px;
-    transform: rotate(90deg);
-}
-
-.firefly:nth-child(4) {
-    top: 550%;
-    left: 200px;
-    scale: 0.8;
-    width: 500px;
-    height: 600px;
-    transform: rotate(70deg);
-    animation-delay: 2s;
-}
-
-.firefly:nth-child(5) {
-    top: 550%;
-    left: -100px;
-    scale: 0.4;
-    width: 1000px;
-    height: 800px;
-}
-
-.firefly:nth-child(6) {
-    top: 515%;
-    right: 0;
-    width: 600px;
-    height: 600px;
-    animation-delay: 5s;
-}
-
-.firefly:nth-child(7) {
-    top: 445%;
-    right: -150px;
-    width: 800px;
-    height: 900px;
-    scale: 0.4;
-}
 
 .firefly:nth-child(8) {
-    top: 415%;
-    left: 0;
+    top: 3700px;
+    left: -60px;
     width: 600px;
     height: 900px;
     scale: 0.7;
@@ -123,8 +115,34 @@ body {
 
 }
 
+.firefly:nth-child(7) {
+    top: 4200px;
+    right: -150px;
+    width: 800px;
+    height: 900px;
+    scale: 0.4;
+}
+
+.firefly:nth-child(3) {
+    top: 4350px;
+    right: -50px;
+    width: 500px;
+    height: 500px;
+    transform: rotate(90deg);
+}
+
+.firefly:nth-child(6) {
+    top: 4800px;
+    right: -40px;
+    width: 600px;
+    height: 600px;
+    animation-delay: 5s;
+}
+
+
+
 .firefly:nth-child(9) {
-    top: 540%;
+    top: 5100px;
     right: 120px;
     width: 600px;
     height: 700px;
@@ -134,13 +152,31 @@ body {
 
 }
 
+.firefly:nth-child(4) {
+    top: 5100px;
+    left: 100px;
+    scale: 0.8;
+    width: 500px;
+    height: 600px;
+    transform: rotate(70deg);
+    animation-delay: 2s;
+}
+
+.firefly:nth-child(5) {
+    top: 5200px;
+    left: 0px;
+    scale: 0.4;
+    width: 1000px;
+    height: 800px;
+}
+
+
 
 
 
 .firefly .fireflies {
     list-style: none
 }
-
 
 
 .firefly:first-child .fireflies li {
@@ -151,6 +187,9 @@ body {
     background-image: url(../img/fireflyy.png);
 }
 
+.firefly:nth-child(10) .fireflies li {
+    background-image: url(../img/fireflyy.png);
+}
 
 .fireflies li {
     background-size: cover;
@@ -161,27 +200,27 @@ body {
     position: absolute;
     z-index: 4;
     animation:
-        leftright 39s infinite cubic-bezier(.39, .0, .45, 1),
-        updown 38s infinite 5s cubic-bezier(.39, .0, .45, 1)
+        leftright 39s infinite cubic-bezier(.42, .0, .62, 1),
+        updown 38s infinite 5s cubic-bezier(.42, .0, .62, 1)
 }
 
 .fireflies li:nth-of-type(2) {
     animation-delay: 3s;
-    animation-duration: 36s, 40s;
+    animation-duration: 36s, 42s;
     animation-fill-mode: backwards, backwards;
-    transform: rotate(90deg);
+    transform: rotate(120deg);
 }
 
 .fireflies li:nth-of-type(3) {
-    animation-delay: 5s;
+    animation-delay: 6s;
     animation-duration: 32s, 36s;
-    transform: rotate(75deg);
+    transform: rotate(90deg);
     animation-fill-mode: backwards, backwards
 }
 
 .fireflies li:nth-of-type(4) {
-    animation-delay: 6s;
-    animation-duration: 24s, 32s;
+    animation-delay: 1s;
+    animation-duration: 24s, 33s;
     transform: rotate(35deg);
 }
 
@@ -368,7 +407,7 @@ body {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 140%;
+    height: 1350px;
     display: block;
 }
 
@@ -382,16 +421,14 @@ body {
 
 
 
-.star {
-    animation: star 1s linear infinite
-}
+
 
 .starcon1 {
     position: absolute;
-    top: 93%;
+    top: 950px;
     width: 100%;
-    height: 50%;
-    background: linear-gradient(to bottom right, rgba(15, 9, 45, 0.1), rgba(15, 8, 43, 1)) no-repeat;
+    height: 400px;
+    background: linear-gradient(to bottom right, rgba(49, 8, 25, 0.1), rgba(15, 8, 43, 1)) no-repeat;
 }
 
 
@@ -406,6 +443,8 @@ body {
     position: relative;
     margin-bottom: 100px;
     padding-top: 100px;
+    padding-left: 350px;
+    padding-right: 350px;
 
 }
 
@@ -873,9 +912,10 @@ body {
     align-items: center;
     position: relative;
     margin: 0 auto;
-    margin-bottom: 100px;
+    padding-right: 350px;
+    padding-left: 350px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 
 .cont2in h2 {
@@ -886,14 +926,17 @@ body {
     color: #1f135b;
 }
 
+.cont2in h2 img {
+    margin-left: -15px;
+}
 
 
 
 .cont2in .tab2 {
     display: flex;
     position: absolute;
-    right: 100px;
-    transform: translateY(-91%);
+    right: 465px;
+    transform: translateY(-88%);
 }
 
 .cont2in .tab2 li {
@@ -989,7 +1032,7 @@ body {
     margin-top: 54px;
     flex-direction: column;
     position: absolute;
-    right: -132px;
+    right: 218px;
     transform: translateY(-400%);
 }
 
@@ -1039,7 +1082,10 @@ body {
     padding-bottom: 150px;
     background: url(../img/con3bg.png) no-repeat -2px -102px;
 
+
 }
+
+
 
 .con3in {
     width: 1220px;
@@ -1204,8 +1250,6 @@ body {
     top: -100px;
     background: url(../img/wrapbg.jpg)no-repeat center -2500px;
     color: #000;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
     z-index: 10;
 }
 
@@ -1778,6 +1822,12 @@ body {
 }
 
 
+.click {
+    position: absolute;
+    left: 180px;
+    top: 400px;
+}
+
 /* ///////////////////////////////////// */
 
 
@@ -1827,18 +1877,22 @@ body {
     width: 1220px;
     height: 100%;
     margin: 0 auto;
+    padding-left: 350px;
+    padding-right: 350px;
     position: relative;
 }
 
 .footerin h4 {
     font-size: 36px;
-    width: 200px;
-    height: 80px;
+    width: 210px;
+    height: 145px;
     text-align: center;
-    line-height: 80px;
+    line-height: 100px;
     position: absolute;
     bottom: 400px;
-    right: 300px;
+    right: 660px;
+    background: url(../img/thankyou.png);
+
 }
 
 .footerin div {
@@ -1846,11 +1900,12 @@ body {
     height: 330px;
     bottom: 130px;
     position: absolute;
-    right: 130px;
+    right: 480px;
     font-size: 18px;
     display: flex;
     line-height: 24px;
-    background: url(../img/logofooter.png) no-repeat -25px center;
+
+
 }
 
 .footerin div p {
