@@ -20,7 +20,7 @@ $(function () {
     $('.headerin ul li').on('click', function () {
         let i = $(this).index();
         $('html, body').animate({
-            scrollTop: winHeight * (i + 1.12)
+            scrollTop: winHeight * (i + 1.2)
         });
     });
 

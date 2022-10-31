@@ -3,9 +3,11 @@
 
 }
 
+
 html,
 body {
     position: relative;
+    overflow: hidden;
 }
 
 .bgani {
@@ -30,42 +32,8 @@ body {
 }
 
 
-.bglo {
-
-    width: 100%;
-    height: 1500px;
-    top: 1514px;
-    position: absolute;
-    background: url(../img/bglo.png) no-repeat left center/cover;
-}
-
-.con1fo {
-    width: 100%;
-    height: 330px;
-    top: 1660px;
-    right: -25%;
-    position: absolute;
-    background: url(../img/con1fo.png);
-}
 
 
-.bough {
-    width: 350px;
-    height: 300px;
-    top: 2070px;
-    background: url(../img/bough.png) no-repeat;
-    position: absolute;
-}
-
-.leaf {
-    width: 300px;
-    height: 480px;
-    top: 2480px;
-    right: 0;
-    margin-left: 1500px;
-    background: url(../img/con2leaf.png) no-repeat left center/cover;
-    position: absolute;
-}
 
 
 .firefly {
@@ -360,7 +328,7 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: url(../img/mainbgdemo.png) no-repeat center -10px / cover;
+    background: url(../img/mainbgdemo.png) no-repeat center -25px/ cover;
     background-blend-mode: lighten;
 
 }
@@ -437,15 +405,26 @@ body {
 /*////////////////////메인끝///////////////////*/
 
 #cont1 {
+    width: 100%;
+    height: 900px;
+    margin: 0;
+
+    position: relative;
+    padding-bottom: 110px;
+    padding-top: 100px;
+    background: url(../img/bglo\ more.png) repeat-x left -140%;
+
+}
+
+.cont1in {
     width: 1220px;
     height: 100%;
-    margin: 0 auto;
+    margin: 0;
+    top: -30px;
     position: relative;
     margin-bottom: 100px;
     padding-top: 100px;
-    padding-left: 350px;
-    padding-right: 350px;
-
+    margin: 0 auto;
 }
 
 #cont1 h2 {
@@ -457,7 +436,7 @@ body {
 }
 
 .aboutus {
-    width: 1220px;
+    width: 100%;
     height: 600px;
     position: relative;
     display: flex;
@@ -902,13 +881,41 @@ body {
 /*////////////////////cont1끝///////////////////*/
 #cont2 {
     width: 100%;
-    height: 100%;
+    height: 900px;
+    background: url(../img/bglo\ more.png)repeat-x left -550px;
+    position: relative;
 }
+
+
+.bough {
+    width: 350px;
+    height: 300px;
+    top: 30px;
+    background: url(../img/bough.png) no-repeat center center /auto;
+    position: absolute;
+}
+
+.leaf {
+    width: 300px;
+    height: 480px;
+    top: 450px;
+    right: 0;
+    background: url(../img/con2leaf.png) no-repeat left center/auto;
+    position: absolute;
+    z-index: 12;
+}
+
+
+
+
+
+
 
 .cont2in {
     width: 1220px;
     height: auto;
     color: #fff;
+
     align-items: center;
     position: relative;
     margin: 0 auto;
@@ -1080,7 +1087,7 @@ body {
     height: 100%;
     padding-top: 100px;
     padding-bottom: 150px;
-    background: url(../img/con3bg.png) no-repeat -2px -102px;
+    background: url(../img/con3bgn.png) repeat-x -2px -102px;
 
 
 }
@@ -1824,8 +1831,10 @@ body {
 
 .click {
     position: absolute;
-    left: 180px;
+    margin-left: 180px;
     top: 400px;
+    width: 100px;
+    height: 100px;
 }
 
 /* ///////////////////////////////////// */
@@ -1941,8 +1950,7 @@ body {
     background-image: url(../img/footerbg.png);
     right: 0;
     position: absolute;
-    top: 4260px;
-
+    bottom: 0;
 }
 
 .footerimg .footleaf {
@@ -1950,5 +1958,5 @@ body {
     height: 300px;
     background: url(../img/footerleaf.png) no-repeat;
     position: absolute;
-    top: 5400px;
+    bottom: 50px;
 }
