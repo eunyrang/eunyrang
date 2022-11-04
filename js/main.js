@@ -3,10 +3,21 @@ $(function () {
     //2.tab>li클릭했을때 순서에 맞게 cont보여주기
     //3.menu_toggle클릭했을 때 this와 menu class(active,show)추가하기
 
+
+
+
+
+    ////////////////////////////////////////////////
+
+
     let winHeight = $(window).height();
     $(window).on('resize', function () {
         winHeight = $(window).height();
     });
+
+
+
+
 
     function scrollPage() {
         let scr = $(window).scrollTop();
@@ -59,7 +70,8 @@ $(function () {
         }
     }
 
-
+    $(window).on('scroll', scrollPage);
+    scrollPage();
 
 
 
