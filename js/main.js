@@ -107,8 +107,23 @@ $(function () {
     });
 
 
+    $('.percent li').on('click', function (e) {
+        e.preventDefault();
 
+        let i = $(this).index();
+        $('.about>div').eq(i).css({ display: 'block' }).siblings().hide();
+        $(this).addClass('on').siblings().removeClass('on');
 
+    })
+
+    $('.per2 li').on('click', function (e) {
+        e.preventDefault();
+
+        let i = $(this).index();
+        $('.abo2>div').eq(i).css({ display: 'block' }).siblings().hide();
+        $(this).addClass('on').siblings().removeClass('on');
+
+    })
 
 
     ////////////////////////////////////////////////////////////

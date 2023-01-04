@@ -518,131 +518,47 @@ body {
 .percent {
     width: 350px;
     height: 450px;
-    display: block;
-    margin: 100px 30px 20px 100px;
+    display: flex;
+    margin: 80px 80px 20px 50px;
 }
 
 .percent li {
-    width: 250px;
-    height: 25px;
-    border: 2px solid #fff;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
     margin-top: 20px;
-    border-radius: 15px;
+    margin-right: 15px;
     position: relative;
-
 }
 
-.percent li p {
-    width: 80px;
-    height: 20px;
-    border: 1px solid #fff;
-    font-size: 20px;
-    left: 0;
-    text-align: center;
-    padding-top: 3px;
-    transform: translateX(-120%);
+.percent li:hover img {
+    scale: 1.1;
 }
 
-.percent li p span {
-    position: absolute;
-    left: 97px;
-    color: #000;
-    border-radius: 15px;
-    padding-top: 5px;
-    top: -2px;
-    text-align: left;
-    padding-left: 20px;
-    animation-fill-mode: forwards;
+.percent li:nth-child(5) {
+    width: 180px;
 }
+
+.percent li:nth-child(1) {
+    margin-left: -10px;
+}
+
+.percent li:nth-child(3) {
+    margin-left: -10px;
+}
+
+.per2 li:nth-child(1) {
+    left: 7px;
+}
+
+.per2 li:nth-child(3) {
+    right: -15px;
+}
+
 
 /* ///////////////////////// */
-.bar1 span {
-    background-color: #fbd3fa;
-    animation-name: bar1;
-    animation-duration: 1s;
-}
 
 
-@keyframes bar1 {
-    0% {
-        width: 1px;
-    }
-
-    100% {
-        width: 184px;
-    }
-}
-
-/* ///////////////////////// */
-.bar2 span {
-    background-color: #cbe0f8;
-    animation-name: bar2;
-    animation-duration: 1s;
-}
-
-
-
-@keyframes bar2 {
-    0% {
-        width: 1px;
-    }
-
-    100% {
-        width: 207px;
-    }
-}
-
-/* ///////////////////////// */
-.bar3 span {
-    background-color: #b9b9fa;
-    animation-name: bar3;
-    animation-duration: 1s;
-}
-
-
-@keyframes bar3 {
-    0% {
-        width: 1px;
-    }
-
-    100% {
-        width: 161px;
-    }
-}
-
-/* ///////////////////////// */
-.bar4 span {
-    background-color: #cbe0f8;
-    animation-name: bar4;
-    animation-duration: 1s;
-}
-
-@keyframes bar4 {
-    0% {
-        width: 1px;
-    }
-
-    100% {
-        width: 172.5px;
-    }
-}
-
-/* ///////////////////////// */
-.bar5 span {
-    background-color: #fbd3fa;
-    animation-name: bar5;
-    animation-duration: 1s;
-}
-
-@keyframes bar5 {
-    0% {
-        width: 1px;
-    }
-
-    100% {
-        width: 200px;
-    }
-}
 
 /* /////////////음향은 나중에//////////// */
 
@@ -660,9 +576,18 @@ body {
 
 .con1in .about {
     width: 600px;
-    margin-left: 30px;
-    margin-top: 120px;
+    margin-left: 50px;
+    margin-top: 100px;
     position: relative;
+    right: -50px;
+}
+
+.con1in .about>div {
+    display: none;
+}
+
+.con1in .about>.on {
+    display: block;
 }
 
 .con1in .about h3 {
@@ -681,13 +606,14 @@ body {
 
 .con1in .about p {
     font-size: 18px;
-    line-height: 23px;
+    line-height: 25px;
+    margin-left: 20px;
 }
 
 .con1in .con1more {
     position: absolute;
-    right: 20px;
-    bottom: 100px;
+    right: 0px;
+    bottom: 50px;
     font-size: 18px;
     width: 120px;
     height: 50px;
@@ -1222,7 +1148,6 @@ body {
     height: auto;
     margin-bottom: 10px;
 }
-
 
 
 
