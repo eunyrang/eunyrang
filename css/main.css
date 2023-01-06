@@ -71,10 +71,10 @@ body {
 }
 
 .firefly:nth-child(2) {
-    top: 2760px;
+    top: 2900px;
     width: 500px;
     height: 500px;
-    left: 250px;
+    left: 220px;
     scale: 0.7;
     z-index: 4;
 
@@ -965,8 +965,10 @@ body {
 }
 
 .workin .con2cont>div .txt p {
-    margin: 20px;
-    font-size: 18px;
+    margin: 30px 50px 30px 30px;
+    font-size: 20px;
+    line-height: 25px;
+
 }
 
 .workin .tab {
